@@ -6,6 +6,7 @@ function Navbar() {
     const [nav, setNav] = useState(false);
     const [color, setColor] = useState('transparent');
     const [textColor, setTextColor] = useState('white');
+   
   
     const handleNav = () => {
       setNav(!nav);
@@ -16,9 +17,11 @@ function Navbar() {
         if (window.scrollY >= 90) {
           setColor('#ffffff');
           setTextColor('#000000');
+          
         } else {
           setColor('transparent');
           setTextColor('#ffffff');
+          
         }
       };
       window.addEventListener('scroll', changeColor);
@@ -36,16 +39,16 @@ function Navbar() {
             </h1>
           </Link>
           <ul style={{ color: `${textColor}` }} className=' hidden sm:flex'>
-            <li className='hover:bg-gray-600 hover:rounded-t-full p-4'>
+            <li className='hover:bg-gray-600 hover:rounded-t-full p-4 hover:text-white'>
               <Link href='/'>Home</Link>
             </li>
-            <li className='hover:bg-gray-600 hover:rounded-t-full p-4'>
+            <li className='hover:bg-gray-600 hover:rounded-t-full p-4 hover:text-white'>
               <Link href='/#gallery'>Gallery</Link>
             </li>
-            <li className='hover:bg-gray-600 hover:rounded-t-full p-4'>
+            <li className='hover:bg-gray-600 hover:rounded-t-full p-4 hover:text-white'>
               <Link href='/work'>Work</Link>
             </li>
-            <li className='hover:bg-gray-600 hover:rounded-t-full p-4'>
+            <li className='hover:bg-gray-600 hover:rounded-t-full p-4 hover:text-white'>
               <Link href='/contact'>Contact</Link>
             </li>
           </ul>
