@@ -15,12 +15,12 @@ const Hero = ({ heading, message }) => {
         <h2 className='text-5xl font-bold '>{heading}</h2>
         <p className='py-5 text-xl'>{message}</p>
 
-        <button onClick={gotoBottom} className='group border-2 my-2 flex items-center px-8 py-3 hover:transparent'>
+        <button onClick={gotoBottom} className='group  my-2 flex items-center px-8 py-3 hover:transparent hover:outline'>
 
          
           Click Me
            
-          <span className='group-hover:rotate-90 duration-200'>
+          <span className='group-hover:rotate-90 duration-200 '>
             <HiArrowNarrowRight className='ml-3 ' />
           </span>
         </button>

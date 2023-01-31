@@ -35,17 +35,17 @@ function Navbar() {
               Pixify
             </h1>
           </Link>
-          <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-            <li className='p-4'>
+          <ul style={{ color: `${textColor}` }} className=' hidden sm:flex'>
+            <li className='hover:bg-gray-600 hover:rounded-t-full p-4'>
               <Link href='/'>Home</Link>
             </li>
-            <li className='p-4'>
+            <li className='hover:bg-gray-600 hover:rounded-t-full p-4'>
               <Link href='/#gallery'>Gallery</Link>
             </li>
-            <li className='p-4'>
+            <li className='hover:bg-gray-600 hover:rounded-t-full p-4'>
               <Link href='/work'>Work</Link>
             </li>
-            <li className='p-4'>
+            <li className='hover:bg-gray-600 hover:rounded-t-full p-4'>
               <Link href='/contact'>Contact</Link>
             </li>
           </ul>
@@ -67,16 +67,16 @@ function Navbar() {
             }
           >
             <ul>
-              <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <li onClick={handleNav} className='p-4 text-4xl hover:bg-gray-500 hover:rounded-t-full'>
                 <Link href='/'>Home</Link>
               </li>
-              <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 hover:rounded-t-full'>
                 <Link href='/#gallery'>Gallery</Link>
               </li>
-              <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 hover:rounded-t-full'>
                 <Link href='/work'>Work</Link>
               </li>
-              <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 hover:rounded-t-full'>
                 <Link href='/contact'>Contact</Link>
               </li>
             </ul>
